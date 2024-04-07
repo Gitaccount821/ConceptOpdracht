@@ -12,13 +12,269 @@
     5. Media Queries
 ////////////////////////*/
 
+
+
 /* ------------------------------- 1. Global Styles -------------------------------- */
+
+:root {
+    --purple: #5722CD;
+    --blue: #4845E4;
+    --pink: #ED4385;
+    --black: #0C0C0C; /* voor standaard tekst */
+    --lightpurple: #F2F0FF; /* voor de grote zwevende woorden, zoals "hello" en "services" */
+    --lichtgrey: #F3F6F9; /* voor de achtergrond van de projecten */
+    --grey: #7A7A7A; /* voor de service-tegel tekst */
+    --white:#FFFFFF;
+    --magnolia:#F2F0FF;
+    --chryslerblue:#5722CD
+}
+
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    color: var(--white);
+
+}
+
+
+
 
 /* ------------------------------- 2. Typography ----------------------------------- */
 
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+
+.merriweather-light {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.merriweather-regular {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.merriweather-bold {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.merriweather-black {
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.merriweather-light-italic {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.merriweather-regular-italic {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.merriweather-bold-italic {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.merriweather-black-italic {
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+h6 {
+    font-size: 14px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Merriweather", serif;
+}
+
+
+p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
 /* ------------------------------- 3. Layout --------------------------------------- */
 
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 /* --------------- 3.1 Reusables ----------------------- */
+
+.outer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: #ED4385 dashed;
+}
+
+.inner-container {
+    flex-grow: 0;
+    flex-basis: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px 80px;
+    border: 2px dashed orange;
+}
+
+.inner-container-nav {
+    display: flex;
+    flex-direction: column;
+    border: 2px dashed purple;
+    flex-grow: 1;
+}
+
+.inner-container2 {
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 120px 80px;
+    border: 2px dashed green;
+}
 
 /* --------------- 3.2 Other --------------------------- */
 
@@ -26,6 +282,92 @@
 
 /* --------------- 4.1 Header ------------------------- */
 
-/* --------------- 4.2 Introduction ------------------- */
+.header-section {
+    background-color: var(--purple);
+    color:var(--magnolia)
+}
+
+.header-content-text {
+    flex-basis: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Center text */
+}
+
+.header-content-text h1 {
+    width: 100%; /* Set width to 100% */
+    margin: 10px 0; /* Adjust margin as needed */
+}
+
+.header-content-text p,
+.header-content-text button {
+    margin: 20px 0px;
+}
+
+.header-navigation {
+    width: 100%;
+    display: flex;
+    border: 2px red dashed;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.header-navigation ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-basis: 300px;
+    align-items: center;
+    margin: 18px 30px
+}
+
+.header-content-text button {
+    margin: 10px 0; /* Adjust margin as needed */
+    background-color: var(--pink); /* Set background color */
+    border-radius: 25px;
+    padding: 15px 28px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.header-content-text button:hover {
+    background-color: lightpink
+}
+
+/* --------------- 4.2 Intro Start ------------------- */
+
+.information-start {
+    background-color: var(--magnolia);
+    color: var(--chryslerblue);
+}
+
+/* --------------- 4.3 Middle Section ------------------- */
+
+.information-middle {
+    background-color: var(--magnolia);
+    color: var(--black);
+}
+
+/* --------------- 4.4 End part with Logos and boxes ------------------- */
+
+.information-end {
+    background-color: var(--magnolia);
+    color: var(--grey);
+}
+
+/* --------------- 4. The form ------------------- */
+
+.form {
+    background-color: var(--purple);
+    color:var(--magnolia)
+
+}
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
