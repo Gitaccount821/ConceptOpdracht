@@ -13,7 +13,6 @@
 ////////////////////////*/
 
 
-
 /* ------------------------------- 1. Global Styles -------------------------------- */
 
 :root {
@@ -24,9 +23,9 @@
     --lightpurple: #F2F0FF; /* voor de grote zwevende woorden, zoals "hello" en "services" */
     --lichtgrey: #F3F6F9; /* voor de achtergrond van de projecten */
     --grey: #7A7A7A; /* voor de service-tegel tekst */
-    --white:#FFFFFF;
-    --magnolia:#F2F0FF;
-    --chryslerblue:#5722CD
+    --white: #FFFFFF;
+    --magnolia: #F2F0FF;
+    --chryslerblue: #5722CD
 }
 
 
@@ -45,8 +44,6 @@ body {
     color: var(--white);
 
 }
-
-
 
 
 /* ------------------------------- 2. Typography ----------------------------------- */
@@ -201,6 +198,10 @@ p {
     margin-bottom: 15px;
 }
 
+h3 {
+    margin-bottom: 20px;
+}
+
 a {
     color: #007bff;
     text-decoration: none;
@@ -218,6 +219,18 @@ h1, h2, h3, h4, h5, h6 {
 p {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
+}
+
+.big-margin2 {
+    margin-top: 60px;
+    color: var(--black);
+    font-size: 20px;
+
+}
+
+.big-margin3 {
+    margin-top: 60px;
+    color: var(--purple);
 }
 
 /* ------------------------------- 3. Layout --------------------------------------- */
@@ -241,39 +254,42 @@ p {
     display: table;
     clear: both;
 }
+
 /* --------------- 3.1 Reusables ----------------------- */
 
 .outer-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    border: #ED4385 dashed;
+
 }
 
-.inner-container {
+.inner-container1 {
     flex-grow: 0;
-    flex-basis: 400px;
+    flex-basis: 11900px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 80px 80px;
-    border: 2px dashed orange;
+    margin: 0px 0px 150px 15px;
+    flex-wrap: wrap;
+
 }
+
 
 .inner-container-nav {
     display: flex;
     flex-direction: column;
-    border: 2px dashed purple;
+
     flex-grow: 1;
 }
 
-.inner-container2 {
+.inner-container-middle {
     flex-grow: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 120px 80px;
-    border: 2px dashed green;
+
 }
 
 /* --------------- 3.2 Other --------------------------- */
@@ -284,21 +300,25 @@ p {
 
 .header-section {
     background-color: var(--purple);
-    color:var(--magnolia)
+    color: var(--magnolia)
 }
 
 .header-content-text {
+    flex-grow: 0;
     flex-basis: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center vertically */
-    align-items: center; /* Center horizontally */
-    text-align: center; /* Center text */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    flex-wrap: wrap;
+    max-width: 650px;
 }
 
 .header-content-text h1 {
-    width: 100%; /* Set width to 100% */
-    margin: 10px 0; /* Adjust margin as needed */
+    width: 100%;
+    margin: 10px 0;
 }
 
 .header-content-text p,
@@ -307,11 +327,12 @@ p {
 }
 
 .header-navigation {
-    width: 100%;
+    width: 98%;
     display: flex;
-    border: 2px red dashed;
+
     flex-direction: row;
     justify-content: flex-end;
+
 }
 
 .header-navigation ul {
@@ -325,8 +346,8 @@ p {
 }
 
 .header-content-text button {
-    margin: 10px 0; /* Adjust margin as needed */
-    background-color: var(--pink); /* Set background color */
+    margin: 10px 0;
+    background-color: var(--pink);
     border-radius: 25px;
     padding: 15px 28px;
     border: none;
@@ -335,6 +356,7 @@ p {
     transition: background-color 0.3s;
     text-transform: uppercase;
     font-size: 12px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 .header-content-text button:hover {
@@ -344,8 +366,21 @@ p {
 /* --------------- 4.2 Intro Start ------------------- */
 
 .information-start {
-    background-color: var(--magnolia);
+    background-color: var(--lichtgrey);
     color: var(--chryslerblue);
+}
+
+.intro-content-text {
+    flex-grow: 0;
+    flex-basis: 300px;
+    display: flex;
+    margin: 70px 0px 0px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    max-width: 650px;
 }
 
 /* --------------- 4.3 Middle Section ------------------- */
@@ -355,10 +390,50 @@ p {
     color: var(--black);
 }
 
+.mid-text {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    flex-basis: 400px;
+    margin: 200px 200px 150px 50px;
+}
+
+.mid-full {
+    width: 100%;
+    display: flex;
+
+    flex-direction: row;
+    margin: 70px 0px 0px 0px;
+    justify-content: space-between;
+
+}
+
+.mid-image {
+    display: flex;
+
+    flex-direction: row;
+    max-width: 100%;
+
+    margin: 0px 40px 0px 0px;
+
+
+}
+
+.mid-full-reverse {
+    width: 100%;
+    display: flex;
+
+    flex-direction: row-reverse;
+    margin: 70px 0px 0px 0px;
+    justify-content: space-between;
+}
+
 /* --------------- 4.4 End part with Logos and boxes ------------------- */
 
 .information-end {
-    background-color: var(--magnolia);
+    background-color: var(--lichtgrey);
     color: var(--grey);
 }
 
@@ -366,7 +441,7 @@ p {
 
 .form {
     background-color: var(--purple);
-    color:var(--magnolia)
+    color: var(--magnolia)
 
 }
 
